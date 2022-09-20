@@ -44,18 +44,18 @@
 
 //////////////////////////////////
 
-// function garisbaru()
-// {
-// 	echo "asdafajf";
+function garisbaru()
+{
+	echo "asdafajf";
 
-// }
+}
 
-// garisbaru("");
+garisbaru("");
 
 
 // function  buat_nama_kapital($nama)
 // 	{
-// 		return ucwords($nama);
+// 		return strrev($nama);
 
 // 	}
 
@@ -63,11 +63,11 @@
 
 // echo $nama_lengkap;
 
-/////////////////////////////////////////
+// /////////////////////////////////////////
 
-// for ($i=5; $i >= 1; $i--) {
-// 	echo "ini adalah looping ke $i<br>";
-//  }
+for ($i=5; $i >= 1; $i--) {
+	echo "ini adalah looping ke $i<br>";
+ }
 
 $x = 5;
 
