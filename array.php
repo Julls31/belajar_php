@@ -143,24 +143,24 @@
              );
 
                 var_dump($data);
-                echo $data[2]["Name"];
+                // echo $data[2]["Name"];
 
 
                 // $keranjang = ["pisang", "apel", "mangga", "jeruk"];
                 // echo count($keranjang) . "<br>";
 
-                // $siswa1 = ["nama" => "abduh",
-                //             "kelas" => "laravel",
-                //             "nilai" => 70
-                // ];
+                $siswa1 = ["nama" => "abduh",
+                            "kelas" => "laravel",
+                            "nilai" => 70
+                ];
                 // echo count($siswa1) . "<br>";
-                // // var_dump($siswa1); echo "<br>";    
-                // // var_dump($keranjang); echo "<br>";  
-                // $siswa1["Nama"] = "adudu";
-                // var_dump($siswa1); echo "<br>";  
-                // echo count($siswa1);
+                // var_dump($siswa1); echo "<br>";    
+                // var_dump($keranjang); echo "<br>";  
+                $siswa1["Nama"] = "adudu";
+                var_dump($siswa1); echo "<br>";  
+                echo count($siswa1);
                 // echo $keranjang[3] . "<br>";
-                // // echo $siswa1[0]["KTP"]; //
+                // echo $siswa1[0]["KTP"]; //
     ?>
 </body>
 
