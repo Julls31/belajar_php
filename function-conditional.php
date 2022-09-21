@@ -54,15 +54,26 @@ Output: ludba
 
 // Code function di sini 
 
+// function reverseString($nama) {
+// 	return strrev($nama);
+// }
+
+// // Hapus komentar di bawah ini untuk jalankan Code
+// $pertama = reverseString("abdul");
+// $kedua = reverseString("Sanbercode");
+// $ketiga =  reverseString("We Are Sanbers Developers");
+// echo $pertama;
+
 function reverseString($nama) {
-	return strrev($nama);
+	for	($balik = strlen($nama) -1; $balik >= 0; $balik--)
+	echo ($balik [$nama]);
 }
 
-// Hapus komentar di bawah ini untuk jalankan Code
-$pertama = reverseString("abdul");
-$kedua = reverseString("Sanbercode");
-$ketiga =  reverseString("We Are Sanbers Developers");
-echo $pertama;
+reverseString("abdul");
+reverseString("Sanbercode");
+reverseString("We Are Sanbers Developers");
+
+
 
 echo "<br>";
 
@@ -124,20 +135,36 @@ sama dengan 60 dan lebih kecil dari 70 maka akan mereturn string “Cukup” sel
 // Code function di sini
 function tentukan_nilai($nilai) {
 	$a = 100;
-	$b = 80;
+	$b = 85;
 	$c = 70;
 	$d = 60;
 
-	while ($b >= $a) {
-		if ($nilai >= $b) {	
-			echo "Sangat Baik";
-	} else {
-			echo "Baik";
-	}
 	
+	switch ($nilai) {
+	 	case ($nilai >= $b && $nilai <= $a):
+	 		echo $nilai = "Sangat Baik" . "<br>";
+	 		break;
+	 	case ($nilai >= $c && $nilai <= $b):
+	 		echo $nilai = "Baik" . "<br>";
+	 		break;
+	 	case ($nilai >= $d && $nilai <= $c):
+	 		echo $nilai = "Cukup" . "<br>";
+	 		break;
+	 	case ($nilai <= $d):
+	 		echo $nilai = "Kurang" . "<br>";
+	 		break;
+	 	
+	//  } ($nilai >= $b && $nilai <= $a){
+	// 	echo $nilai = "Sangat Baik";
+	// 	break;
+	// }
+	//  elseif ($nilai >= $c && $nilai <= $b) {
+	// 	echo $nilai = "Baik";
 	}
 
+
 }
+
 
 // Hapus komentar di bawah ini untuk jalankan code
  tentukan_nilai(98); //Sangat Baik
