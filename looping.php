@@ -69,12 +69,14 @@
         echo "array numbers: ";
         print_r($numbers);
         // Lakukan Looping di sini
-        foreach ($numbers as $rest) {
-            $rest %= 5;
-        }
-
+//         foreach ($numbers as $rest) {
+//            echo $rest % 5;
+        
+// }
         echo "<br>";
-        echo "Array sisa baginya adalah:  ". $rest[0] . $rest[1] .$rest[2] .$rest[3] .$rest[4] .$rest[5]; 
+        echo "Array sisa baginya adalah:  "; 
+       foreach ($numbers as $rest) {
+           echo $rest % 5;}
         echo "<br>";
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
@@ -93,14 +95,22 @@
             Jangan ubah variabel $items
 
         */
-        $items = [
-            ['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'logitek.jpeg'], 
-            ['002', 'Keyboard MSI', 300000, 'Keyboard gaming MSI mekanik', 'msi.jpeg'],
-            ['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
-            ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
-        ];
+        // $items = [
+        //     ['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'logitek.jpeg'], 
+        //     ['002', 'Keyboard MSI', 300000, 'Keyboard gaming MSI mekanik', 'msi.jpeg'],
+        //     ['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
+        //     ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
+        // ];
         
+          $items = [
+            ["id" => '001', "name" =>'Keyboard Logitek', "price" => 60000, "description" => 'Keyboard yang mantap untuk kantoran', "source" => 'logitek.jpeg'], 
+            ["id" => '002', "name" =>'Keyboard MSI', "price" =>300000, "description" => 'Keyboard gaming MSI mekanik', "source" => 'msi.jpeg'],
+            ["id" => '003', "name" =>'Mouse Genius', "price" => 50000, "description" => 'Mouse Genius biar lebih pinter', "source" => 'genius.jpeg'],
+            ["id" => '004', "name" =>'Mouse Jerry', "price" => 30000, "description" => 'Mouse yang disukai kucing', "source" => 'jerry.jpeg']
+        ];
         // Output: 
+        var_dump($items);
+
         
         echo "<h3>Soal No 4 Asterix </h3>";
         /* 
@@ -114,9 +124,15 @@
             * * * * 
             * * * * *
         */
+
         echo "Asterix: ";
-        echo "<br>";        
-    
+        for ($a = 0 ; $a < 6; $a++){
+            for ($b = 0 ; $b < $a; $b++){
+                echo "* ";
+            }
+       
+        echo "<br />";        
+    }
     ?>
 
 </body>
