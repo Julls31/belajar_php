@@ -64,15 +64,19 @@ Output: ludba
 // $ketiga =  reverseString("We Are Sanbers Developers");
 // echo $pertama;
 
-function reverseString($nama) {
-	for	($balik = strlen($nama) -1; $balik >= 0; $balik--)
-	echo ($balik [$nama]);
+function reverseString($name) {
+	$balik = strlen($name);
+	for ($i=0, $j = $balik - 1; $i < ($balik / 2); $i++, $j--) { 
+		$hasil = $name[$i];
+		$name[$i] = $name[$j];
+		$name[$j] = $hasil;
+	}
+	return$name;
 }
 
-reverseString("abdul");
-reverseString("Sanbercode");
-reverseString("We Are Sanbers Developers");
-
+print reverseString("abdul"). "<br>";
+print reverseString("Sanbercode"). "<br>";
+print reverseString("We Are Sanbers Developers");
 
 
 echo "<br>";
